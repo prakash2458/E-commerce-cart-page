@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+}
+.header-wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.main{
+    margin: 150px auto 125px;
+}
+.logo{
+    margin-top: 20px;
+}
+nav{
+    display: inline;
+    float: right;
+}
+nav ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color: #000;
+    margin-left: 30px;
+    margin-top: 30px;
+    display: flex;
+}
+nav a:hover{
+    color: orangered;
+    font-weight: bold;
+}
+
+.heading h1{
+    margin-bottom: 40px;
+}
+.flex-heading{
+    display: grid;
+    grid-template-columns: 2fr 2fr 0fr;
+    border-bottom: 0.5px solid #D8D8D8;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.green-grid{
+    display: grid;
+    grid-template-columns: 2fr 2fr 0fr;
+    align-items: center;
+    border-bottom: 0.5px solid #D8D8D8;
+    padding-bottom: 20px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+.green-dress{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    align-items: center;
+}
+.green-dress-size-box{
+    margin-top: -22px;
+}
+input[type=number]{
+    background: rgb(244, 244, 244);
+    height: 28px;
+    width: 10%;
+    padding: 5px 10px;
+    margin-left: 5px;
+    outline: none;
+    border: none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+.label{
+    font-weight: bold;
+}
+#green-dress{
+    background: rgb(244, 244, 244);
+    height: 28px;
+    width: 45%;
+    outline: none;
+    border: none;
+    margin-top: 12px;
+}
+.checkout{
+    text-align: end;
+}
+.total-price{
+    display: inline-flex;
+}
+.total-price h4{
+    margin-bottom: 15px;
+}
+h4.subtotal{
+    margin-right: 34px;
+}
+.checkout-btn{
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+.checkout-btn a{
+    background: rgb(255 255 255);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 15px 60px;
+    font-weight: bold;
+}
+.checkout-btn a:hover{
+    background: #000;
+    color: #fff;
+    text-shadow: 3px 3px 8px red;
+}
+/* Footer */
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 300px;
+    margin-top: 42px;
+    margin-bottom: 40px;
+}
+.main1{
+    display: flex;
+    justify-content: space-between;
+}
+.main2{
+    margin-left: 76px;
+}
+input[type=email]{
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-bottom: 50px;
+    width: 87%;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+}
+.footer1 p{
+    font-weight: bold;
+    font-size: 14px;
+}
+.footer1 li a{
+    font-size: 14px;
+}
+.main2 p{
+    margin: 20px 0 25px 0;
+}
+.signup{
+    background-color: rgb(41, 41, 41);
+    color: #fff;
+    padding: 10px 109px;
+    font-weight: bold;
+}
+.signup:hover{
+    background: rgb(70, 198, 248);
+    box-shadow: 2px 5px 15px rgb(100, 99, 99);
+    color: rgb(37, 37, 37);
+}
+/* Media Queries for Tablets */
+@media screen and (max-width: 1000px) {
+    .container{
+        margin: 5px auto;
+    }
+    .flex-heading{
+        display: none;
+    }
+    .green-grid, .green-dress{
+        display: block;
+    }
+    .green-dress-img img{
+        width: 100%;
+    }
+    .label{
+        position: relative;
+        top: 30px;
+    }
+    #green-dress{
+        width: 40%;
+        height: 50px;
+        margin-top: 50px;
+    }
+    input[type=number]{
+        width: 40%;
+        height: 50px;
+        margin-top: 35px;
+        margin-left: 0;
+    }
+    .price h4{
+        margin-top: 20px;
+    }
+    .checkout{
+        border-bottom: 0.5px solid #D8D8D8;
+        padding-bottom: 15px;
+    }
+    .footer{
+        grid-gap: 0;
+        margin-bottom: 42px;
+    }
+}
+@media (min-width: 320px) and (max-width: 420px) {
+    nav{
+        float: none;
+    }
+    nav ul{
+        margin-left: 57px;
+    }
+    nav li{
+        margin-right: -13px;
+    }
+    nav a{
+        margin-top: -43px;
+    }
+}
+@media (min-width: 320px) and (max-width: 700px) {
+    .footer{
+        grid-gap: 50px;
+    }
+    .main2{
+        margin: auto;
+    }
+    .container > p{
+        margin-bottom: 40px;
+    }
+}
